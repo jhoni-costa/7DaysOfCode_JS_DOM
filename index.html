@@ -12,7 +12,7 @@
             <form class="form" onsubmit="dataForm()">
                 <div class="form-group">
                     <label for="name"> Nome: </label>
-                    <input type="text" minlength="3" maxlength="120" pattern="([aA-zZ]+)" name="name" id="name">
+                    <input type="text" title="Somente Letras" minlength="3" maxlength="120" pattern="([aA-zZ]+)" name="name" id="name">
                 </div>
                 <div class="form-group">
                     <label for="date"> Data de Nascimento:  </label>
@@ -22,6 +22,22 @@
                     <input type="submit" id="btn-submit" value="Enviar">
                 </div>
             </form>
+        </div>
+        <div id="lista-pessoas">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nome</th>
+                        <th>Data de Nascimento</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela">
+                    <tr id="linha-zero">
+                        <td colspan="3">Nenhuma informação cadastradas</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </body>
 </html>
